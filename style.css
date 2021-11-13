@@ -1,0 +1,137 @@
+:root {
+    --light-shade-100: #F1ECE9;
+    --light-shade-300: #D9B675;
+    --neutral-shade-200: #A06F3F;
+    --accent-shade-600: #5B1F08;
+    --dark-shade-800: #2C3036;
+
+    --ff-professional: 'Roboto', sans-serif;
+    --ff-casual: 'Open Sans Condensed', sans-serif;
+    --ff-fancy: 'Petemoss', cursive;
+    --ff-seasonal: 'Yuji Syuku', serif;
+}
+
+*, 
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--ff-casual);
+    font-size: 1.2rem;
+    line-height: 1.5;
+    max-width: 100%;
+}
+
+body,
+h2,
+h3,
+p {
+    margin: 0;
+}
+
+h2,
+h3 {
+    font-family: var(--ff-seasonal);
+    font-weight: 900;
+    line-height: 1;
+}
+
+h2,
+h3,
+p {
+    margin-bottom: 1em;
+
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    box-shadow: 0 41px 54px -12px rgb(0 0 0 / 56%), 0 4px 25px 0px rgb(0 0 0 / 12%), 0 8px 10px -5px rgb(0 0 0 / 20%);
+}
+
+@media(max-width: 40rem) {
+    img {
+        margin-bottom: 1rem;
+    }
+}
+
+.center-text {
+    text-align: center;
+}
+
+section {
+    padding: 0.5rem 0;
+}
+
+
+@media (min-width: 40em) {
+    section {
+        padding: 2rem 0;
+    }
+}
+
+.container {
+    margin-inline: auto;
+    width: min(90%, 70.5rem);
+}
+
+.split {
+    display: flex;
+    flex-direction: column;
+}
+
+@media (min-width: 40em) {
+    .split {
+        flex-direction: row;
+    }
+
+    .split > * {
+        flex-basis: 100%;
+    }
+
+    .split > * + * {
+        margin-left: 1em;
+    }
+}
+
+.container--narrow {
+    max-width: 25rem;
+    height: 11rem;
+}
+
+.signature {
+    color: var(--accent-shade-600);
+    font-family: var(--ff-fancy);
+    font-weight: 450;
+    font-size: 2rem;
+    padding-top: 0.5rem;
+}
+
+
+.quote {
+    max-height: 50%;
+    color: var(--accent-shade-600);
+}
+
+.light-bg {
+    background-color: var(--light-shade-100);
+    color: var(--dark-shade-800);
+}
+
+.dark-bg {
+    background-color: var(--dark-shade-800);
+    color: var(--light-shade-100);
+}
+
+.neutral-bg {
+    background-color: var(--neutral-shade-200);
+    color: var(--dark-shade-800);
+}
+
+.accent-bg {
+    background-color: var(--accent-shade-600);
+    color: var(--light-shade-300);
+}
+
